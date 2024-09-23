@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<form> <input type="text" placeholder="search" name="searchkey"><input type="submit"></form>
+<br>
+  <% for(let b of message){%>
+    <a href="/book/<%= b.isbn %>"><%=  b.title  %> </a> <br>
+    <% } %>
+</body>
+</html>
